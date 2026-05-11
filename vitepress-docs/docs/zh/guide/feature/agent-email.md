@@ -65,7 +65,7 @@
 
 - `Authorization: Bearer <JWT>` — 所有 `/api/*` 请求必须携带
 - `x-custom-auth: <SITE_PASSWORD>` — 仅当站点启用了私有密码
-- `x-lang: en` 或 `zh` — 可选，报错信息语言
+- `x-lang: zh` / `en` / `vi` — 可选，报错信息语言
 
 ::: warning 不要把 Address JWT 当 User JWT 用
 Address JWT 走 `Authorization: Bearer`，用户 JWT 走 `x-user-token`，两种凭证不可混用，否则返回 `401 InvalidAddressCredentialMsg`。

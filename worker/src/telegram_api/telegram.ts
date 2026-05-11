@@ -71,7 +71,7 @@ const COMMANDS = [
     },
     {
         command: "lang",
-        description: "设置语言 /lang <zh|en> | Set language /lang <zh|en>"
+        description: "设置语言 /lang <zh|en|vi> | Set language /lang <zh|en|vi>"
     },
 ]
 
@@ -268,9 +268,10 @@ export function newTelegramBot(c: Context<HonoCustomType>, token: string): Teleg
 
         // @ts-ignore
         const lang = ctx?.message?.text.slice("/lang".length).trim().toLowerCase();
-        if (lang === 'zh' || lang === 'en') {
+        if (lang === 'zh' || lang === 'en' || lang === 'vi') {
             await c.env.KV.put(`${CONSTANTS.TG_KV_PREFIX}:lang:${userId}`, lang);
-            return await ctx.reply(`${msgs.TgLangSetSuccessMsg} ${lang === 'zh' ? '中文' : 'English'}`);
+            const label = lang === 'zh' ? '中文' : lang === 'vi' ? 'Tiếng Việt' : 'English';
+            return await ctx.reply(`${msgs.TgLangSetSuccessMsg} ${label}`);
         }
 
         const currentLang = await c.env.KV.get(`${CONSTANTS.TG_KV_PREFIX}:lang:${userId}`);
@@ -278,7 +279,8 @@ export function newTelegramBot(c: Context<HonoCustomType>, token: string): Teleg
             `${msgs.TgCurrentLangMsg} ${currentLang || 'auto'}\n`
             + `${msgs.TgSelectLangMsg}\n`
             + `/lang zh - 中文\n`
-            + `/lang en - English`
+            + `/lang en - English\n`
+            + `/lang vi - Tiếng Việt`
         );
     });
 

@@ -135,7 +135,7 @@
 
 | 变量名                     | 类型        | 说明                                             | 示例                  |
 | -------------------------- | ----------- | ------------------------------------------------ | --------------------- |
-| `DEFAULT_LANG`             | 文本        | Worker 错误信息默认语言, zh/en                   | `zh`                  |
+| `DEFAULT_LANG`             | 文本        | Worker 错误信息默认语言, zh/en/vi                   | `zh`                  |
 | `TITLE`                    | 文本        | 自定义前端页面网站标题，支持 html                | `Custom Title`        |
 | `ANNOUNCEMENT`             | 文本        | 自定义前端页面公告，支持 html                    | `Custom Announcement` |
 | `ALWAYS_SHOW_ANNOUNCEMENT` | 文本/JSON   | 是否总是显示公告(即使无更改), 默认 `false`       | `true`                |

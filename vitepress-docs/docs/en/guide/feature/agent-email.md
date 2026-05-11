@@ -65,7 +65,7 @@ To let agents consume the mailbox directly, the project adds **server-parsed** r
 
 - `Authorization: Bearer <JWT>` — required on every `/api/*` request
 - `x-custom-auth: <SITE_PASSWORD>` — only when the site enables the private password
-- `x-lang: en` or `zh` — optional, error-message language
+- `x-lang: zh` / `en` / `vi` — optional, error-message language
 
 ::: warning Do not confuse Address JWT with User JWT
 Address JWT goes in `Authorization: Bearer`, User JWT goes in `x-user-token`. Mixing them returns `401 InvalidAddressCredentialMsg`.

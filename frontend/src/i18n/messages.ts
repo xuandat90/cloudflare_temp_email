@@ -6,6 +6,7 @@ import { deMessages } from './locales/source/de'
 import { esMessages } from './locales/source/es'
 import { jaMessages } from './locales/source/ja'
 import { ptBRMessages } from './locales/source/ptBR'
+import { viMessages } from './locales/source/vi'
 
 import type { SupportedLocale } from './locale-registry'
 
@@ -14,6 +15,7 @@ type SourceLocale = Extract<SupportedLocale, 'en' | 'zh'>
 type AdditionalLocale = Exclude<SupportedLocale, SourceLocale>
 
 const additionalLocaleSources: Record<AdditionalLocale, Record<string, string>> = {
+  vi: viMessages,
   es: esMessages,
   'pt-BR': ptBRMessages,
   ja: jaMessages,
@@ -66,6 +68,7 @@ const buildAdditionalLocaleMessages = (locale: AdditionalLocale) => {
 export const I18N_MESSAGES: Record<SupportedLocale, LocaleTree> = {
   zh: buildSourceLocaleMessages('zh'),
   en: buildSourceLocaleMessages('en'),
+  vi: buildAdditionalLocaleMessages('vi'),
   es: buildAdditionalLocaleMessages('es'),
   'pt-BR': buildAdditionalLocaleMessages('pt-BR'),
   ja: buildAdditionalLocaleMessages('ja'),
