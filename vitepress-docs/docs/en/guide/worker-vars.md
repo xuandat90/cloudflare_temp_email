@@ -139,7 +139,7 @@
 
 | Variable Name              | Type        | Description                                                              | Example               |
 | -------------------------- | ----------- | ------------------------------------------------------------------------ | --------------------- |
-| `DEFAULT_LANG`             | Text        | Worker error message default language, zh/en/vi                             | `zh`                  |
+| `DEFAULT_LANG`             | Text        | Worker error message default language, zh/en/vi                             | `vi`                  |
 | `TITLE`                    | Text        | Custom frontend page website title, supports html                        | `Custom Title`        |
 | `ANNOUNCEMENT`             | Text        | Custom frontend page announcement, supports html                         | `Custom Announcement` |
 | `ALWAYS_SHOW_ANNOUNCEMENT` | Text/JSON   | Whether to always show announcement (even if unchanged), default `false` | `true`                |

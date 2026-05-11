@@ -10,7 +10,7 @@
 
 ### Features
 
-- feat: |多语言| 新增越南语（`vi`）支持，前端语言切换可选择 Tiếng Việt，并补充 Worker API 错误信息与 Telegram Bot 语言选择的越南语文案
+- feat: |多语言| 新增越南语（`vi`）支持并设为默认语言，前端语言切换可选择 Tiếng Việt，并补充 Worker API 错误信息与 Telegram Bot 语言选择的越南语文案
 - feat: |Frontend| 将邮箱地址凭证弹窗升级为“地址凭证与连接方式”，复用普通用户与 admin 创建邮箱结果弹窗；支持通过 `ENABLE_AGENT_EMAIL_INFO` 展示 AI Agent 接入信息，并通过 `SMTP_IMAP_PROXY_CONFIG` 展示 SMTP/IMAP 客户端连接信息
 
 ### Bug Fixes
