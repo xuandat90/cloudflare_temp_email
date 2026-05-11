@@ -8,13 +8,15 @@ export const hashPassword = async (password: string) => {
 }
 
 export const getRouterPathWithLang = (path: string, lang: string) => {
-    const normalizedLang = lang === 'en'
+    const normalizedLang = lang === 'zh'
+        || lang === 'en'
+        || lang === 'vi'
         || lang === 'es'
         || lang === 'pt-BR'
         || lang === 'ja'
         || lang === 'de'
         ? lang
-        : 'zh';
+        : 'vi';
 
     return getPathWithLocale(path, normalizedLang);
 }

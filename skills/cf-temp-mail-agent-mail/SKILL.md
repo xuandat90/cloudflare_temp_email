@@ -35,7 +35,7 @@ On first use, if the file exists, read and use it. If not, ask the user and save
 
 - `Authorization: Bearer <JWT>` — on every `/api/*` request.
 - `x-custom-auth: <SITE_PASSWORD>` — only when the site requires it.
-- `x-lang: en` or `zh` — optional, error-message language.
+- `x-lang: zh`, `en`, or `vi` — optional, error-message language; defaults to `vi`.
 
 Do not send the Address JWT as `x-user-token` — that is a different JWT type and will yield `401 InvalidAddressCredentialMsg`.
 

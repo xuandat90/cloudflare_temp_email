@@ -5,9 +5,10 @@ import { en } from './en'
 export default defineConfig({
   title: "Temp Mail Doc",
   description: 'CloudFlare 免费收发临时域名邮箱 | Free temporary domain email on CloudFlare',
-  lang: 'zh-CN',
+  lang: 'vi-VN',
   lastUpdated: true,
   locales: {
+    root: { label: 'Tiếng Việt', lang: 'vi-VN' },
     zh: { label: '简体中文', ...zh },
     en: { label: 'English', ...en }
   },
@@ -29,7 +30,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:image', content: 'https://temp-mail-docs.awsl.uk/logo.png' }],
     ['link', { rel: 'alternate', hreflang: 'zh-Hans', href: 'https://temp-mail-docs.awsl.uk/zh/' }],
     ['link', { rel: 'alternate', hreflang: 'en', href: 'https://temp-mail-docs.awsl.uk/en/' }],
-    ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://temp-mail-docs.awsl.uk/zh/' }],
+    ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://temp-mail-docs.awsl.uk/' }],
   ],
   sitemap: {
     hostname: 'https://temp-mail-docs.awsl.uk',
