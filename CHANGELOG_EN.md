@@ -10,7 +10,7 @@
 
 ### Features
 
-- feat: |i18n| Add Vietnamese (`vi`) support and make it the default language, including Tiếng Việt in the frontend language switcher plus Vietnamese Worker API error messages and Telegram Bot language selection
+- feat: |i18n| Add Vietnamese (`vi`) support and make it the default language, including Tiếng Việt in the frontend language switcher, Vietnamese Worker API responses when no language is provided, Vietnamese Worker API error messages, and Telegram Bot language selection
 - feat: |Frontend| Upgrade the address credential dialog to "Address Credentials & Connection Methods" and reuse it for both normal users and admin-created addresses; support showing AI Agent access via `ENABLE_AGENT_EMAIL_INFO` and SMTP/IMAP client settings via `SMTP_IMAP_PROXY_CONFIG`
 
 ### Bug Fixes

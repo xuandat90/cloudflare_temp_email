@@ -14,7 +14,7 @@ export default {
         if (locale === "vi") return vi;
 
         // fallback language
-        return en;
+        return vi;
     },
     getMessagesbyContext: (
         c: Context<HonoCustomType>
@@ -26,6 +26,6 @@ export default {
         if (locale === "vi") return vi;
 
         // fallback language
-        return en;
+        return vi;
     }
 }
